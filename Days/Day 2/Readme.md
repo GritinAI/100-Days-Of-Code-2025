@@ -49,4 +49,6 @@
     * [Groupby and Concatenation](https://www.geeksforgeeks.org/concatenate-strings-from-several-rows-using-pandas-groupby/)
 
 ## Always make sure you code along each of the Resources 
+<img width="1080" height="1080" alt="Day 1 (1)" src="https://github.com/user-attachments/assets/72caed36-acd4-4fea-bb7c-6708549fa73c" />
+
 
