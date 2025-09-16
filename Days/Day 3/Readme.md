@@ -16,3 +16,4 @@
 
 ## Always make sure you code along each of the Resources 
 
+<img width="1080" height="1080" alt="Day 1 (2)" src="https://github.com/user-attachments/assets/73d1fee8-8ae0-48ab-9019-2f3bdfa3deae" />
