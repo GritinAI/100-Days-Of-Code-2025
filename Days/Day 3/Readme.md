@@ -1,4 +1,4 @@
-# Day 2 Resources 
+# Day 3 Resources 
 
 ## Section 4 : Linear Algebra
 
