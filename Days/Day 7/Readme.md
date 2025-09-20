@@ -1,6 +1,6 @@
 # Day 6 Resources 
 
-## Section 7 : Jupyter and Colab
+## Section 8 : Jupyter and Colab
 
 ### Topics: Best Practices and Tips
 1. Overview
