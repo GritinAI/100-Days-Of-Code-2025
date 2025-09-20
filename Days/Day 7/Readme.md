@@ -1,4 +1,4 @@
-# Day 6 Resources 
+# Day 7 Resources 
 
 ## Section 8 : Jupyter and Colab
 
@@ -11,3 +11,4 @@
 
 ## Always make sure you code along each of the Resources 
 
+<img width="1080" height="1080" alt="7" src="https://github.com/user-attachments/assets/b49321b1-ff34-4595-b917-1a605036d972" />
