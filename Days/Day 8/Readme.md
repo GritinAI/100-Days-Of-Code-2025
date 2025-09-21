@@ -38,4 +38,5 @@
     * [Pandas Code Colab](https://colab.research.google.com/drive/14hShWZjXmZyqybqRfdp78egtPlEhf_cE?usp=sharing)
 
 ## Always make sure you code along each of the Resources 
+<img width="1080" height="1080" alt="Day 1 (3)" src="https://github.com/user-attachments/assets/2ef9830a-b2be-4ccc-90d8-ffe2fa1c58f6" />
 
