@@ -4,7 +4,7 @@
 
 ### Topics: Reading In Files
 1. Overview
-    * [Matplotlib Basic Tutorial](hhttps://youtu.be/DAQNHzOcO5A)
+    * [Matplotlib Basic Tutorial](https://youtu.be/DAQNHzOcO5A)
     * [Matplotlib Documentation](https://matplotlib.org/3.5.0/api/_as_gen/matplotlib.pyplot.html)
     * [Code Colab](https://colab.research.google.com/drive/13VCKkLE2r6Yok9tlMAImmCQ85Mf0VdC1?usp=sharing)
 
