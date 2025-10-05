@@ -37,12 +37,12 @@ This roadmap breaks down 100 days of learning into eight progressive phases:
 
 1. **Consistency over intensity.** Better to learn 1 hour/day for 100 days than cram in one weekend.  
 2. **Hands-on practice.** After each concept, code an example or mini-project.  
-3. **Log your progress.** Keep a daily journal or GitHub issue to reflect on learnings.  
-4. **Share & collaborate.** Post questions or findings on Discord/Slack with `#100DaysAI`.  
+3. **Log ✍️ your progress.** Keep a daily journal or GitHub issue to reflect on learnings.  
+4. **Share 🛜 & collaborate 🤼.** Post questions or findings on Discord/Slack with `#100DaysAI`.  
 5. **Cite your sources.** Link tutorials, papers, or videos you use for reference.  
-6. **Iterate & revisit.** If a concept wasn’t clear, tag it for a deeper review later.  
-7. **Respect licensing.** Use open-source code responsibly and attribute where required.  
-8. **Have fun!** Mix in creative experiments—this is your journey.
+6. **Iterate 🔁🌀 & revisit.** If a concept wasn’t clear, tag it for a deeper review later.  
+7. **Respect licensing 🫡.** Use open-source code responsibly and attribute where required.  
+8. **Have fun!** Mix in creative experiments — this is your journey.
 
 ---
 
