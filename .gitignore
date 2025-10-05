@@ -1,3 +1,5 @@
 timetable.csv
 venv/
 vetted_timetable.csv
+*.xlsx
+.vscode
