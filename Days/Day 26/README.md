@@ -1,23 +1,23 @@
 
-# Day 0️⃣2️⃣6️⃣: Pre-LLMs II (Embeddings 🔢🔢🔢)
+# Day 0️⃣2️⃣6️⃣: Pre-LLMs II (Embeddings 🔢🔢🔢 I)
 
 ---
 
-$$\text{""Words have meaning."}$$
+$$\text{"Words have meaning."}$$
 $$\text{Antonin Scalia}$$
 
 ---
 
 ## Synopsis
 
-- [Day 0️⃣2️⃣6️⃣: Pre-LLMs II (Embeddings 🔢🔢🔢)](#day-0️⃣2️⃣6️⃣-pre-llms-ii-embeddings-)
+- [Day 0️⃣2️⃣6️⃣: Pre-LLMs II (Embeddings 🔢🔢🔢 I)](#day-0️⃣2️⃣6️⃣-pre-llms-ii-embeddings--i)
   - [Synopsis](#synopsis)
   - [From Tokens 🔵🔴 to Embeddings 🔢🔢🔢](#from-tokens--to-embeddings-)
   - [Phase 1️⃣: Vectors 🔢🔢🔢](#phase-1️⃣-vectors-)
-  - [Phase 2️⃣: Vector 🔢🔢🔢 Similarity](#phase-2️⃣-vector--similarity)
-    - [Vector Comparison I](#vector-comparison-i)
+  - [Phase 2️⃣: Vector 🔢🔢🔢 Similarity ⚖️](#phase-2️⃣-vector--similarity-️)
+    - [Vector 🔢🔢🔢 Comparison ⚖️ 1.0](#vector--comparison-️-10)
       - [Assumptions](#assumptions)
-    - [Vector Comparison II](#vector-comparison-ii)
+    - [Vector 🔢🔢🔢 Comparison ⚖️ 2.0](#vector--comparison-️-20)
   - [Phase 3️⃣: Embeddings 🔢🔢🔢 as Vectors 🔢🔢🔢](#phase-3️⃣-embeddings--as-vectors-)
   - [Summary](#summary)
   - [Further Materials](#further-materials)
@@ -27,7 +27,7 @@ $$\text{Antonin Scalia}$$
 
 ## From Tokens 🔵🔴 to Embeddings 🔢🔢🔢
 
-In the last lesson, we saw how we could help our LLM uniquely identify each token by assigning a unique integer value to each. Since LLMs (and computers 💻🖥️) only speak numbers, this also makes it easier to process our text 🔡. There is a challenge though: the LLM can identify the tokens 🔵🔴 and represent them as numbers 🔢 now. But it has no idea of the meaning of these tokens 🔵🔴.
+In the last lesson, we saw how we could help our LLM uniquely identify each token 🔵🔴 by assigning a unique integer value to each. Since LLMs (and computers 💻🖥️) only speak numbers, this also makes it easier to process our text 🔡. There is a challenge though: the LLM can identify the tokens 🔵🔴 and represent them as numbers 🔢 now. But it has no idea of the meaning of these tokens 🔵🔴.
 
 We need to fix this problem, and embeddings 🔢🔢🔢 will help us do that.
 
@@ -51,13 +51,13 @@ Of course not! The mass in $\text{kg}$ tells us the amount of stuff each materia
 
 ---
 
-$$ \text{Insight 💡: Simple numbers 🔢 on their own do not tell the whole story! They only give a perspective.} $$
+$$ \text{💡 INSIGHT 💡: Simple numbers 🔢 on their own do not tell the whole story! They only give a perspective.} $$
 
 ---
 
-Just as we saw in the example above, we needed both the mass and volume to have a better understanding of the materials involved. Each of these (i.e., mass and volume) are simple numbers on their won. But when combined, they improve our understanding of the materials involved from different perspectives. Each of these perspectives is known as a ***Dimension***, and we can keep adding more simple numbers to explain the materials in more perspectives (i.e., dimensions) e.g., melting point, boiling point, density, etcetera.
+Just as we saw in the example above, we needed both the mass and volume to have a better understanding of the materials involved. Each of these (i.e., mass and volume) are simple numbers on their own. But when combined, they improve our understanding of the materials involved from different perspectives. Each of these perspectives is known as a ***Dimension***, and we can keep adding more simple numbers to explain the materials in more perspectives (i.e., dimensions) e.g., melting point, boiling point, density, etcetera.
 
-When we do this, our materials go from being represented with simple numbers like this $\textbf{(I)}$ ...
+When we do this, our materials go from being represented with simple numbers 🔢 like this $\textbf{(I)}$ ...
 
 ---
 
@@ -77,17 +77,17 @@ $$ \text{B = [15 kg, 4 ℓ]} \rightarrow \text{B = [15, 4]}$$
 
 ---
 
-As can be seen, each material is now represented by a list of numbers. Each number in the list represents a dimension along which we are trying to describe the material.
+As can be seen, each material is now represented by a list of numbers [🔢🔢🔢]. Each number in the list represents a dimension along which we are trying to describe the material.
 
 The first approach i.e.,  $\textbf{(I)}$ uses simple numbers known as ***scalars*** or ***scalar quantities***, while the second approach i.e., $\textbf{(II)}$ uses numbers we call ***vectors***, or ***vector quantities***.
 
 ---
 
-## Phase 2️⃣: Vector 🔢🔢🔢 Similarity
+## Phase 2️⃣: Vector 🔢🔢🔢 Similarity ⚖️
 
-### Vector Comparison I
+### Vector 🔢🔢🔢 Comparison ⚖️ 1.0
 
-As we have agreed above, vectors allow us to represent information in a more complete manner compared to simple numbers. But there is something else. With simple numbers, we could easily conclude at a glance that two objects were the same. Is that the same with vectors? If not how do we know two objects are the same? Let us explore this idea a bit.
+As we have agreed above, vectors 🔢🔢🔢 allow us to represent information in a more complete manner compared to simple numbers. But there is something else. With simple numbers, we could easily conclude at a glance that two objects were the same. Is that the same with vectors 🔢🔢🔢? If not how do we know two objects are the same? Let us explore this idea a bit.
 
 Let us have three extra materials $C$, $D$ and $E$, weighing $\text{3 kg}$, $\text{7.5 kg}$, $\text{7.5 kg}$ respectively. Let us tabulate the mass and volumes of our examples:
 
@@ -157,15 +157,15 @@ $$ \text{E = 0.5 B ✅} $$
 
 ---
 
-### Vector Comparison II
+### Vector 🔢🔢🔢 Comparison ⚖️ 2.0
 
-All of this work is exhausting 😪! What if we had a simple way to telling if two or more vectors were the same (and how similar they are, if they are not exactly the same)?
+All of this work is exhausting 😪! What if we had a simple way to telling if two or more vectors 🔢🔢🔢 were the same (and how similar they are, if they are not exactly the same)?
 
-This is the ***dot product***. With the dot product, we can compare two vectors very easily! The equation is simple!
+This is the ***cosine similarity***. With the cosine similarity, we can compare two vectors very easily! The equation is simple!
 
 ---
 
-$$ \vec{A}.\vec{B} = \frac{\sum^N_{i=0}{A_i.B_i}}{|A|.|B|}$$
+$$ cossim(\vec{A},\vec{B}) = \frac{\sum^N_{i=0}{A_i.B_i}}{|A|.|B|}$$
 
 ---
 
@@ -182,46 +182,48 @@ $$ \text{E = [7.5, 2]} $$
 
 ---
 
-Calculating the dot products for $A$ and $B$:
+Calculating the cosine similarity for $A$ and $B$:
 
 ---
 
 $$ |A| = \sqrt{3^2 + 30^2} = \sqrt{909} = 30.15 $$
 $$ |B| = \sqrt{15^2 + 4^2} = \sqrt{241} = 15.52 $$
 
-$$ \vec{A}.\vec{B} = \frac{(3 \times 15) + (30 \times 4)}{30.15 \times 15.52} = 0.353$$
+$$ cossim(\vec{A},\vec{B}) = \frac{(3 \times 15) + (30 \times 4)}{30.15 \times 15.52} = 0.353$$
 
 ---
 
-If we calculate the dot product for $A$ and $C$:
+If we calculate the cosine similarity for $A$ and $C$:
 
 ---
 
 $$ |A| = \sqrt{3^2 + 30^2} = \sqrt{909} = 30.15 $$
 $$ |C| = \sqrt{3^2 + 30^2} = \sqrt{909} = 30.15 $$
 
-$$ \vec{A}.\vec{C} = \frac{(3 \times 3) + (30 \times 30)}{30.15 \times 30.15} = 1.000$$
+$$ cossim(\vec{A},\vec{C}) = \frac{(3 \times 3) + (30 \times 30)}{30.15 \times 30.15} = 1.000$$
 
 ---
 
-And how about the dot product for $B$ and $E$?
+And how about the cosine similarity for $B$ and $E$?
 
 ---
 
 $$ |B| = \sqrt{15^2 + 4^2} = \sqrt{241} = 15.52 $$
 $$ |E| = \sqrt{7.5^2 + 2^2} = \sqrt{60.25} = 7.76 $$
 
-$$ \vec{B}.\vec{E} = \frac{(15 \times 7.5) + (4 \times 2)}{15.52 \times 7.76} = 1.000$$
+$$ cossim(\vec{B},\vec{E}) = \frac{(15 \times 7.5) + (4 \times 2)}{15.52 \times 7.76} = 1.000$$
+
+💡 Notice how the cosine similarity can easily detect that $E$ is just an exactly scaled-down replica of $B$, and so it knows that they are perfectly similar otherwise 😁!
 
 ---
 
-$$ \text{Exercise: Calculate the dot products for all pairs of vectors. Compare the dot products with the assumptions we made.} $$
+$$ \text{Exercise: Calculate the cosine similarities for all the pairs of vectors 🔢🔢🔢. Compare these cosine similarities with the assumptions we made.} $$
 
 ---
 
-Now that we have constructed the vocabulary, we know that any word we (or the LLM) encounter can be represented in terms of these unique symbols in the vocab. Now, we need to represent these tokens as numbers 🔢, since the LLM does not know text the way we do.
+Now that we have constructed the vocabulary, we know that any word we (or the LLM) encounter can be represented in terms of these unique symbols in the vocab. Now, we need to represent these tokens 🔵🔴 as numbers 🔢, since the LLM does not know text the way we do.
 
-The solution is simple: assign a unique integer index to each unique token in the vocabulary. That way, whenever the LLM sees a specific integer number, we know exactly what token it is referring to 😁! Let us look at a simple example using the low-level vocab:
+The solution is simple: assign a unique integer 🔢 index to each unique token 🔵🔴 in the vocabulary. That way, whenever the LLM sees a specific integer 🔢 number, we know exactly what token 🔵🔴 it is referring to 😁! Let us look at a simple example using the low-level vocab:
 
 Say we have the low-level vocab made of letters of the English alphabet:
 
@@ -231,7 +233,7 @@ $$\text{Vocab = \{a, b, c, d..., z\}}$$
 
 ---
 
-All we need to do is represent each token by an integer starting from zero. In practically all cases, we number then according to their position e.g. *a* is 0, *b* is 1 and so on.
+All we need to do is represent each token 🔵🔴 by an integer 🔢 starting from zero 0️⃣. In practically all cases, we number then according to their position e.g. *a* is 0, *b* is 1 and so on.
 
 ---
 
@@ -245,34 +247,46 @@ That is all (mostly 😏)!
 
 ## Phase 3️⃣: Embeddings 🔢🔢🔢 as Vectors 🔢🔢🔢
 
-Now we have the ability to represent objects as vectors 😁! This idea applies to both concrete (i.e., physical) and abstract (i.e., non-physical) objects. For instance, we have just used vectors to represent concrete objects like materials. We can also represent abstract ideas 💡💭 and concepts e.g., velocity, acceleration.
+Now we have the ability to represent objects as vectors 🔢🔢🔢 😁! This idea applies to both concrete (i.e., physical) and abstract (i.e., non-physical) objects. For instance, we have just used vectors 🔢🔢🔢 to represent concrete objects like materials. We can also represent abstract ideas 💡💭 and concepts e.g., velocity, acceleration.
 
 ---
 
 $$ \text{Question 🤔:} $$
-$$ \text{If we can apply vectors to abstract ideas like velocity and acceleration, ...} $$
-$$ \text{... can we apply them to words and tokens 🤔?} $$
+$$ \text{If we can apply vectors 🔢🔢🔢 to abstract ideas like velocity and acceleration, ...} $$
+$$ \text{... can we apply them to words and tokens 🔵🔴 🤔?} $$
 
 ---
 
-Yes, we can 😁! In fact, that is the way to go 😁!
+Yes, we can 😁! In fact, that is the way to go 😁! We construct a vector 🔢🔢🔢 for a token 🔵🔴 such that each dimension of the vector 🔢🔢🔢 encodes some kind of information about said token 🔵🔴 😀! This vector 🔢🔢🔢 is an attempt to represent the meaning of this token 🔵🔴. So ...
 
-Now that we have constructed the vocabulary, we know that any word we (or the LLM) encounter can be represented in terms of these unique symbols in the vocab. Now, we need to represent these tokens as numbers 🔢, since the LLM does not know text the way we do.
+---
 
-The solution is simple: assign a unique integer index to each unique token in the vocabulary. That way, whenever the LLM sees a specific integer number, we know exactly what token it is referring to 😁! Let us look at a simple example using the low-level vocab:
+$$ \text{Question 🤔: How do we compare two tokens 🔵🔴 or words to see if they have similar meanings 🤔?} $$
+$$ \text{Answer: Using the cosine similarity 😀!} $$
 
-Say we have the low-level vocab made of letters of the English alphabet:
+---
+
+The cosine similarity comes to the rescue 😀!
+
+We have already seen how we can use the cosine similarities to calculate the similarity between vectors 🔢🔢🔢. If we can represent the meaning of tokens 🔵🔴 as vectors 🔢🔢🔢, then we can compare these meanings by comparing the vectors 🔢🔢🔢 using the **cosine similarity**!
+
+These vectors that represent the meaning of a token 🔵🔴? We have a name for them: **Embeddings**!
 
 ---
 
 ## Summary
 
-So, how does tokenization work? The following steps describe it:
+1️⃣ Vectors 🔢🔢🔢 help us represent the world in more completion.
 
-1️⃣ Split the text 🔡 into subparts. These subparts are known as **Tokens**.
-2️⃣ Represent each unique token with an index starting from 0. This is the way the LLM represents the tokens. Not as text 🔡, but as numbers 🔢.
+2️⃣ We can compare these vectors 🔢🔢🔢 using metrics like cosine similarity.
 
-Now that we know what LMs and LLMs are, we can see about understanding the structure of LLMs. How did they come to be? How are they built? What are their components 🟦🔵🟩🟪 (apart from the parameters 🔢)?
+3️⃣ If we can somehow represent the meaning of our tokens 🔵🔴 using vectors 🔢🔢🔢 ...
+
+4️⃣ ... we can then compare the meaning of these tokens 🔵🔴 in vector 🔢🔢🔢 format using this cosine similarity 😁!
+
+5️⃣ These vectors 🔢🔢🔢 that represent the meaning of a token are known as $\text{Embeddings}$.
+
+So, we now know how embeddings can be useful. We now know that they can help us encode the meaning of tokens 🔵🔴. But where do they come from? And how do we even get them? In the next lesson, we will dive deeper into the concepts of embeddings 😀!
 
 ---
 
@@ -282,8 +296,6 @@ Now that we know what LMs and LLMs are, we can see about understanding the struc
 2. [A Beginner's Guide to Vector Embeddings (YouTube) 📽️](https://www.youtube.com/watch?v=NEreO2zlXDk)
 3. [Tokens & Embeddings (Blog) 📝](https://rohitkhattar.substack.com/p/tokens-and-embeddings-the-hidden)
 4. [From Tokens to Embeddings (Blog) 📝](https://ml-digest.com/architecture-training-of-the-embedding-layer-of-llms/)
-5. [Evolution of Embeddings (Blog) 📝](https://www.francescatabor.com/articles/2025/3/8/llm-bootcamp-module-3-evolution-of-embeddings)
-6. [The Evolution of Embeddings (Blog) 📝](https://blog.dailydoseofds.com/p/the-evolution-of-embeddings)
 
 ---
 

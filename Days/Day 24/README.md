@@ -143,7 +143,7 @@ Our language model is an equation that:
 - Takes in a set of words (i.e., {$x_1$, $x_2$ $x_3$}) as input, and
 - Predicts the probability of one word given the others (i.e., $P(x_3 \vert x_2, x_1)$) as output.
 
-For instance, say I have a sentence: *Kylian Mbappe is the best*. Our language model tries to predict the next best words that are most likely to follow the sequence. If our language model is well-trained, it should predict high probabilities for words like *striker* or *footballer* etcetera, and low probabilities for words like *dancer*, *singer*, "lawyer* etcetera. We can then select words that have high probability to complete the sentence.
+For instance, say I have a sentence: *Kylian Mbappe is the best*. Our language model tries to predict the next best words that are most likely to follow the sequence. If our language model is well-trained, it should predict high probabilities for words like *striker* or *footballer* etcetera, and low probabilities for words like *dancer*, *singer*, *lawyer* etcetera. We can then select words that have high probability to complete the sentence.
 
 Now, assume that *striker* is the word with the highest probability, and that we select it. The words that came before it are known as the ***context***, while the selected word is known as the ***completion***.
 
