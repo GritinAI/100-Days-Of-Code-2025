@@ -58,11 +58,11 @@ Deep dive into Large Language Models via the Illustrated LLM Book’s Colab note
 
 ### Phase 3: Prompt Engineering and LLM Augmentation (Days 0️⃣3️⃣1️⃣ – 0️⃣4️⃣0️⃣)
 
-Understand the paradigm of prompt engineering. Figure out how to augment LLMs with techniques like retrieval-augmented generation (RAG). Understand the different design patterns for RAG and how to implement them with vector databases d.
+Understand the basics of the prompt engineering paradigm. Figure out how to augment LLMs with techniques like retrieval-augmented generation (RAG). Understand the different RAG design patterns and implement them with vector databases.
 
 ### Phase 4: Agentic AI (Days 0️⃣4️⃣1️⃣ – 0️⃣5️⃣0️⃣)
 
-Understand the agentic AI paradigm and build your first AI agents. Inspect and run 40+ example agents in categories from beginner to advanced.
+Understand the agentic AI paradigm and build your first AI agents. Learn about the different agentic design patterns. Inspect and run 40+ example agents in categories from beginner to advanced.
 
 ### Phase 5: Made-With-ML Course (Days 0️⃣5️⃣1️⃣ – 0️⃣6️⃣0️⃣)
 

@@ -3,3 +3,4 @@ venv/
 vetted_timetable.csv
 *.xlsx
 .vscode
+.ipynb_checkpoints
