@@ -280,8 +280,8 @@ In fact, it doesn't just look like the straight line equation; it **IS** the str
 
 Now that we know this ...
 
-$$ \text{Question 🤔 \#1: What was the point of learning about FFNs?} $$
-$$ \text{Question 🤔 \#2: What was that thing about embedding lookup tables again 🫤?} $$
+$$ \text{Question 🤔 1: What was the point of learning about FFNs?} $$
+$$ \text{Question 🤔 2: What was that thing about embedding lookup tables again 🫤?} $$
 
 ### 2️⃣ Embedding Tables
 
