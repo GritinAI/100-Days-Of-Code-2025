@@ -334,9 +334,9 @@ To see the practical implementation, please checkout the notebook attached: [emb
 
 ## Summary
 
-So, we now know how embeddings can be useful. We now know that they encode meaning of tokens. But where do they come from? How do we get them?
+So, we now know how embeddings can be useful. And we know how they are generated.
 
-Now that we know what LMs and LLMs are, we can see about understanding the structure of LLMs. How did they come to be? How are they built? What are their components 🟦🔵🟩🟪 (apart from the parameters 🔢)?
+Now we can see about understanding the structure of LLMs. How did they come to be? How are they built? What are their components 🟦🔵🟩🟪 (apart from the parameters 🔢)?
 
 ---
 
